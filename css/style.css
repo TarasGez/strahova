@@ -1,28 +1,54 @@
-@font-face {
-    font-family: "Helvetica-Light";
-    src: url("../fonts/Helvetica-Light.otf") format("opentype");
-      }
+:root {
+    /* HEX */
+    --white:#fff;
+    --whiteButton:#fefefe;
+    --whiteBack:#f5f5f5;
+
+    --backMain:#212121;
+    --backH:#292929;
+    --backNav:#090909;
+
+    --grey:#ccc;
+    --greyBorder:#ddd;
+    --greyDark:#8d8d8d;
+
+    --blue:#2478f9;
+    --purple:#6941aa;
+    --red:#ff491f;
+
+}
 
 html, body, p, a, h1, h2
  {
-    font-family: "Helvetica-Light", Helvetica, sans-serif, Arial;
     font-size: 12px;
-    color: #212121;
+    color: var(--backMain);
 }
 h2 {
     font-size: 24px;
-    color: #292929;
+    color: var(--backH);
     font-weight: 600;
 }
 h3 {
     font-size: 14px;
     font-weight: 600;
-    color: #292929;
+    color: var(--backH);
     margin-bottom: 12px;
 }
-.margin-top-20{
-    margin-top: 20px;
+
+.uk-input,
+.uk-select,
+.uk-textarea {
+    border-radius: 5px;
+    min-width: 150px;
 }
+
+/* -------------------MARGIN PADDING */
+.margin-top-50{
+    margin-top: 50px;
+}
+
+/* ///////////////////MARGIN PADDING */
+
 .uk-navbar {
     padding: 0 60px;
 }
@@ -30,7 +56,7 @@ h3 {
     font-size:12px
 }
 .uk-navbar-nav>li>a {
-    color: #090909;
+    color: var(--backNav);
     padding: 0 5px;
     font-size:12px
 }
@@ -38,7 +64,7 @@ h3 {
     content: "";
     height: 20px;
     margin-right: 10px;
-    border-right: 1px solid #d8d8d8;
+    border-right: 1px solid var(--greyBorder);
 }
 .uk-navbar-nav>li:first-child>a:before {
     content: "";
@@ -47,25 +73,28 @@ h3 {
 strong {font-weight: 900;}
 .uppercase{text-transform: uppercase;}
 .underline{text-decoration: underline;}
-.orange,
+.red,
 .uk-navbar-nav>li.uk-active>a {
-    color: #ff491f;
+    color: var(--red);
 }
 .uk-navbar-nav>li.uk-active>a {
     text-decoration: underline;
 }
-.orange-bg {
-    background-color: #ff491f;
-    color: white;
+.red-bg {
+    background-color: var(--red);
+    color: var(--white);
+}
+.grey {
+    color: var(--grey);
 }
 .blue {
-    color: #67adf3;
+    color: var(--blue);
 }
 .purple-bg {
-    background-color: #6941aa;
-    color: white;
+    background-color: var(--purple);
+    color: var(--white);
 }
-.purple-bg:hover{background-color: #ff491f;} 
+.purple-bg:hover{background-color: var(--red);} 
 
 .city-pin {
     text-transform: uppercase;
@@ -76,8 +105,13 @@ strong {font-weight: 900;}
     padding-top:3px;
 }
 
+.stars {
+    white-space: nowrap;
+}
+
+/* ----------------------------- MAIN BANNER */
 .section-banner{
-    background-image: linear-gradient(#fff,#fff,#fff,#f5f5f5);
+    background-image: linear-gradient(var(--white), var(--white), var(--white), var(--whiteBack));
 }
 .banner {
     min-height: 330px;
@@ -91,7 +125,7 @@ strong {font-weight: 900;}
 }
 .banner-text h1{
     font-size: 36px;
-    color: #212121;
+    color: var(--backMain);
     font-weight: bold;
 }
 .banner-text p{
@@ -112,10 +146,12 @@ button.big {
     min-width: 230px;
 }
 button.big:hover,
-button.orange-bg:hover {
-    background-color: #6941aa;
+button.red-bg:hover {
+    background-color: var(--red);
 }
-
+button.red-bg:hover{
+    background-color: var(--purple);
+}
 .calc {
     margin: 50px;
 }
@@ -128,42 +164,118 @@ button.orange-bg:hover {
     padding: 10px 65px;
 }
 
-.ico {
+/* ----------------------------- INNER */
+.breadcrumb {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+ul.check {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+ul.check li::before{
     display: inline-block;
-    vertical-align: middle;
-    min-height: 15px;
-    min-width: 15px;
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+    content: url(../images/icons/ico-check.svg);
 }
-.ico-arrow {
-    background: url(../images/icons/ico-arrow.png) no-repeat;
+.logo-about {
+    max-width: 200px;
+    max-height: 50px; 
 }
-.ico-calc {
-    background: url(../images/icons/ico-calc.png) no-repeat;
+.likes h6 {
+    font-size: 11px;
+    color: var(--grey);
+    margin: 16px 0 8px 0;
+}
+.likes-button {
+    display: inline-block;
+    border: 1px solid var(--red);
+    border-radius: 5px;
+}
+.likes-button button{
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    border-right: 1px solid var(--red);
+}
+.likes-button span{
+    padding: 0 18px;
+    color: var(--red);
+    font-size: 16px;
+}
+.ico-users-text {
+    color: var(--greyBorder);
+    text-align: center;
+}
+.ico-users-text i{
+    margin-right: 8px;
 }
 
+.red-line-bottom::after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 167px;
+    border-bottom: 3px solid var(--red);
+}
+.ul-phones {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.ul-phones li::before {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+    content:url(../images/icons/ico-phone.svg);
+}
+
+/* ----------------------------- MAIN */
 main {
-    display: flex;
-    flex-direction: row;
-    background-color: #f5f5f5;
+    background-color: var(--whiteBack);
     padding: 35px 60px;
 }
-
-.all-offers {
-    margin-right: 30px;
-    width: 100%;
+.inner h2 span{
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--red);
 }
-.all-offers-content {
-    background-color: #fff;
-    border: 1px solid #dddddd;
+.inner h3{
+    font-size: 24px;
+}
+.inner p,
+.inner ul {
+    font-size: 14px;
+}
+
+.inner .uk-tab {
+    margin-bottom:0;
+}
+.uk-tab>.uk-active>a {
+    border-bottom: 1px solid var(--red);
+}
+
+.all-offers-content,
+.inner-content {
+    background-color: var(--white);
+}
+
+.all-offers-content{
+    border: 1px solid var(--greyBorder);
     border-top:none;
 }
+.offer {
+    border-bottom: 1px solid var(--greyBorder);
+}
+.offer:last-child {
+    border: 0;
+}
 .offer.active {
-    border-left: 1px solid #ff491f;
+    border-left: 1px solid var(--red);
 }
-.uk-table {
-    margin-bottom: 0;
-}
-
 .company-logo {
     width: 200px;
     margin-right: 10px;
@@ -184,29 +296,29 @@ main {
     flex-grow: 2;
 }
 
-.table-rank table tr td:first-child {
-    color:#ccc;
+.table-rank div div.offer:first-child {
+    color: var(--grey);
+    border-top: 1px solid var(--greyBorder);
 }
 
-
+/* ------------------------------------ RIGHTBAR */
 .right-bar {
     width: 270px;
-    margin-top: 50px;
 }
 .right-bar div{
     margin-bottom:20px;
-    background-color: #fff;
+    background-color: var(--white);
 }
 .right-bar div h3{
     text-align: center;
     font-weight: bold;
 }
 .right-bar div h3 span{
-    border-bottom: 1px solid #ff491f;
+    border-bottom: 1px solid var(--red);
 }
 .right-bar div a{
     font-size: 14px;
-    color:  #2478f9
+    color: var(--blue);
 }
 .right-bar .support {
     display: flex;
@@ -217,13 +329,13 @@ main {
 }
 .right-bar .support a{
     font-size: 12px;
-    color:#212121;
+    color: var(--backMain);
 }
 
 .right-bar .support button{
     margin:10px;
     padding: 7px;
-    color: #fefefe;
+    color: var(--whiteButton);
     font-size: 12px;
 }
 .right-bar .support-img {
@@ -236,13 +348,26 @@ main {
     justify-content: space-between;
     margin: 0 -10px;
     border-radius: 10px;
-    border: 1px solid #ff491f;
+    border: 1px solid var(--red);
 }
 .right-bar .search input{
-    width: auto;
+    width: 145px;
+    padding-left: 25px;
+    color: var(--greyDark);
 }
-.right-bar .search input:before {
-    content: url("data:image/svg+xml;charset=UTF-8, <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16 fa-fw"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg>")
+.right-bar .search input:focus{
+    border-radius: 10px;
+    border-color: dodgerblue;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.right-bar .search .icon-search::before {
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 8px;
+    content:url('../images/icons/search.png');
 }
 .right-bar .search input,
 .right-bar .search button{
@@ -250,9 +375,12 @@ main {
     border-radius: 9px;
 }
 .right-bar .search button{
-    color: #fff;
-    background-color: #ff491f;
+    color: var(--white);
+    background-color: var(--red);
     font-size: 11px;
+}
+.right-bar .search button:hover{
+    background-color: var(--purple);
 }
 
 .right-bar .offers-right {
@@ -266,7 +394,7 @@ main {
 .right-bar section {
     margin: 10px -20px;
     padding: 10px 20px 15px 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--greyBorder);
 }
 .right-bar section:last-child {
     border: none;
@@ -280,48 +408,91 @@ main {
 .right-bar div p{
     margin: 5px 0;
 }
-.right-bar div button.small {
+button.small {
     border-radius: 5px;
     padding: 5px 10px;
-    background-color: transparent;
-    border: 1px solid #ff491f;
 }
-
-
-
-
+button.bordered {
+    background-color: transparent;
+    border: 1px solid var(--red);
+}
 
 .seo-text{
-    margin: 45px 0 125px 0;
+    margin: 20px 0 40px 0;
 }
 
+/* ----------------------------------- ICONS */
+.ico {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 15px;
+    min-width: 15px;
+}
+.ico-small {
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+}
+.ico-medium {
+    display: inline-block;
+    vertical-align: middle;
+    height: 24px;
+    width: 24px;
+}
+
+.ico-arrow {
+    background: url(../images/icons/ico-arrow.png) no-repeat center;
+}
+.ico-calc {
+    background: url(../images/icons/ico-calc.png) no-repeat;
+}
+.ico-heart {
+    content: url(../images/icons/ico-heart.svg);
+}
+.ico-users {
+    content: url(../images/icons/ico-users.svg);
+}
+.ico-pin {
+    content: url(../images/icons/ico-pin.svg);
+}
+.ico-star {
+    content: url(../images/icons/ico-star.svg);
+}
+.ico-star-grey {
+    content: url(../images/icons/ico-star-grey.svg);
+}
+/* ----------------------------------- FOOTER */
 footer {
-    background-color: #292929;
+    background-color: var(--backH);
     padding: 40px 0;
     text-align: center;
-    color: #8d8d8d;
+    color: var(--greyDark);
     line-height: 18px;
 
 }
 footer p{
-    color: #8d8d8d;
+    color: var(--greyDark);
 }
 footer .copy{
-    color: #fff;
+    color: var(--white);
 }
 
 @media only screen and (max-width:767px){
     .uk-navbar {
         padding: 0;
     }
-
     main {
         margin: 0 -15px;
         padding: 10px;
-
-        
     }
-    .all-offers {
-        margin-right: 0px;
+    .logo-about {
+        max-width: 150px;
+    }
+    .ico-users-text {
+        margin: 10px 0 5px 0;
+    }
+    .stars .ico-medium {
+        width: 12px;
     }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../images/icons/favicon.png">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -27,11 +28,11 @@
 
             <div class="uk-navbar-right city-pin blue">Алматы</div>
         </nav>
-        <nav class="uk-navbar uk-hidden@m margin-top-20">
+        <nav class="uk-navbar uk-hidden@m uk-margin-top">
             <!-- <nav class="uk-navbar"> -->
           
             <div class="uk-navbar-left">
-                <a class="uk-icon uk-navbar-toggle-icon orange" uk-navbar-toggle-icon="" href="#">
+                <a class="uk-icon uk-navbar-toggle-icon red" uk-navbar-toggle-icon="" href="#">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg>
                 </a>
             </div>
@@ -50,7 +51,7 @@
                         подбор кредита
                     </h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    <button class="big orange-bg">Посмотреть предложения <i class="ico ico-arrow"></i></button>
+                    <button class="big red-bg">Посмотреть предложения <i class="ico ico-arrow"></i></button>
                 </section>
             </div>
         </div>
@@ -58,154 +59,153 @@
         <section class="calc">
             <div>
                 <h3>Автострахование Алматы</h3>
-                <button class="big orange-bg uppercase">Заказать расчет <i class="ico ico-arrow"></i></button>
+                <button class="big red-bg uppercase">Заказать расчет <i class="ico ico-calc"></i></button>
             </div>
         </section>
 
-        <main>
+        <main class="uk-flex">
 
             <section class="all-offers">
                 <h2>Все предложения ОГПО</h2>
 
                 <section class="all-offers-content">
 
-                    <table class="uk-table uk-table-middle uk-table-divider uk-table-responsive">
-                        <tbody>
-                            <tr class="offer active">
-                                <td class="company-logo">
-                                    <img src="images/companies/halyk.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>Halyk</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Онлайн оформление<br />
-                                        Защита авто по Казахстану<br />
-                                        Выплата по страховому случаю</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                    <div class="uk-padding-small uk-padding-remove-vertical uk-padding-remove-right">
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/london.jpg" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>London-Almaty</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="active offer uk-grid uk-grid-small uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                <img src="images/companies/halyk.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>Halyk</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Онлайн оформление<br />
+                                    Защита авто по Казахстану<br />
+                                    Выплата по страховому случаю</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/ffinance.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>FREEDOM finance</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/london.jpg" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>London-Almaty</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/evrazia.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>Евразия</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m"></p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/ffinance.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>FREEDOM finance</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/nsk.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>HCK</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/evrazia.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>Евразия</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m"></p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/nomad.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>NOMAD</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/nsk.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>HCK</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
+
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/nomad.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>NOMAD</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
+                    </div>
                    
                 </section>
 
@@ -213,221 +213,218 @@
 
                 <section class="all-offers-content">
 
-                    <table class="uk-table uk-table-middle uk-table-divider uk-table-responsive">
-                        <tbody>
-                            <tr class="offer active">
-                                <td class="company-logo">
-                                    <img src="images/companies/halyk.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>Halyk</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Онлайн оформление<br />
-                                        Защита авто по Казахстану<br />
-                                        Выплата по страховому случаю</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                    <div class="uk-padding-small uk-padding-remove-vertical uk-padding-remove-right">
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/london.jpg" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>London-Almaty</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                <img src="images/companies/halyk.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>Halyk</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Онлайн оформление<br />
+                                    Защита авто по Казахстану<br />
+                                    Выплата по страховому случаю</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/ffinance.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>FREEDOM finance</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="active offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/london.jpg" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>London-Almaty</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/evrazia.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>Евразия</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m"></p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/ffinance.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>FREEDOM finance</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/nsk.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>HCK</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/evrazia.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>Евразия</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m"></p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
 
-                            <tr class="offer">
-                                <td class="company-logo">
-                                        <img src="images/companies/nomad.png" alt="">
-                                </td>
-                                <td class="company-title">
-                                    <p>ОГПО <strong>NOMAD</strong></p>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>
-                                    <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
-                                </td>
-                                <td>
-                                    <button class="orange-bg">Подробней</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/nsk.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>HCK</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
+
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="company-logo">
+                                    <img src="images/companies/nomad.png" alt="">
+                            </div>
+                            <div class="company-title">
+                                <p>ОГПО <strong>NOMAD</strong></p>
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="company-text uk-visible@m">Скидка 10% при покупке полиса через сайт<br />Быстрое осуществление выплаты</p>
+                            </div>
+                            <div class="uk-width-1-6@m uk-width-auto">
+                                <button class="red-bg">Подробней</button>
+                            </div>
+                        </div>
+                    </div>
                    
                 </section>
 
                 <h2>Рейтинг страховых</h2>
 
                 <section class="all-offers-content table-rank">
-                    <table class="uk-table uk-table-middle uk-table-divider uk-table-responsive">
-                        <thead>
-                            <tr>
-                                <th class="uk-width-small">Место</th>
-                                <th class="uk-table-expand">Название</th>
-                                <th class="uk-width-small">Рейтинг</th>
-                                <th class="uk-width-small">Нравится</th>
-                            </tr>
-                        </thead>
+                    <div class="uk-padding-small uk-padding-remove-vertical uk-padding-remove-right">
 
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td><p>ОГПО <strong>NOMAD</strong></p></td>
-                                <td>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>18</td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-6 uk-padding-remove-left">Место</div>
+                            <div class="uk-width-expand">Название</div>
+                            <div class="uk-width-1-4">Рейтинг</div>
+                            <div class="uk-width-1-6">Нравится</div>
+                        </div>
 
-                            <tr>
-                                <td>1</td>
-                                <td><p>ОГПО <strong>NOMAD</strong></p></td>
-                                <td>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>18</td>
-                            </tr>
+                        
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-6">1</div>
+                            <div class="uk-width-expand"><p>ОГПО <strong>NOMAD</strong></p></div>
+                            <div class="uk-width-1-4">
+                                <div class="stars">
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star"></i>
+                                    <i class="ico-medium ico-star-grey"></i>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-6 uk-flex uk-flex-center uk-flex-left@m">18</div>
+                        </div>
 
-                            <tr>
-                                <td>1</td>
-                                <td><p>ОГПО <strong>NOMAD</strong></p></td>
-                                <td>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>18</td>
-                            </tr>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-6">2</div>
+                            <div class="uk-width-expand"><p>ОГПО <strong>NOMAD</strong></p></div>
+                            <div class="uk-width-1-4">
+                                <div class="stars">
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star-grey"></i>
+                            </div>
+                            </div>
+                            <div class="uk-width-1-6 uk-flex uk-flex-center uk-flex-left@m">18</div>
+                        </div>
 
-                            <tr>
-                                <td>1</td>
-                                <td><p>ОГПО <strong>NOMAD</strong></p></td>
-                                <td>
-                                    <div class="stars">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                        <img src="images/icons/star0.png" alt="">
-                                    </div>
-                                </td>
-                                <td>18</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-6">3</div>
+                            <div class="uk-width-expand"><p>ОГПО <strong>NOMAD</strong></p></div>
+                            <div class="uk-width-1-4">
+                                <div class="stars">
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star-grey"></i>
+                            </div>
+                            </div>
+                            <div class="uk-width-1-6 uk-flex uk-flex-center uk-flex-left@m">18</div>
+                        </div>
+
+                        <div class="offer uk-grid uk-grid-small uk-margin-remove-top uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                            <div class="uk-width-1-6">4</div>
+                            <div class="uk-width-expand"><p>ОГПО <strong>NOMAD</strong></p></div>
+                            <div class="uk-width-1-4">
+                                <div class="stars">
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star"></i>
+                                <i class="ico-medium ico-star-grey"></i>
+                            </div>
+                            </div>
+                            <div class="uk-width-1-6 uk-flex uk-flex-center uk-flex-left@m">18</div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="seo-text">
@@ -435,9 +432,9 @@
                     </p>
                 </section>
 
-            </section>
+            </section> 
 
-            <section class="right-bar uk-visible@m">
+            <section class="right-bar uk-margin-left margin-top-50 uk-visible@m">
                 <div class="support">
                     <img src="images/banner-right.png" alt="" class="support-img">
                     <button class="purple-bg">Задать вопрос нашим специалистам</button>
@@ -446,7 +443,9 @@
 
                 <div  class="offers-right">
                     <div class="search">
-                        <input type="text"><button>Найти</button>
+                        <i class="icon icon-search"></i>
+                        <input type="text">
+                        <button>Найти</button>
                     </div>
                 </div>
 
@@ -474,7 +473,7 @@
                             медицинское страхование,
                             как выбрать страховую компанию?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                        <button class="small">подробней ></button>
+                        <button class="small bordered">подробней ></button>
                     </section>
 
                     <section>
@@ -482,7 +481,7 @@
                             медицинское страхование,
                             как выбрать страховую компанию?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                        <button class="small">подробней ></button>
+                        <button class="small bordered">подробней ></button>
                     </section>
 
                     <section>
@@ -490,7 +489,7 @@
                             медицинское страхование,
                             как выбрать страховую компанию?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                        <button class="small">подробней ></button>
+                        <button class="small bordered">подробней ></button>
                     </section>
                 </div>
             </section>
