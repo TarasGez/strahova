@@ -462,6 +462,7 @@ button.bordered {
 .ico-star-grey {
     content: url(../images/icons/ico-star-grey.svg);
 }
+
 /* ----------------------------------- FOOTER */
 footer {
     background-color: var(--backH);
