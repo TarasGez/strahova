@@ -142,6 +142,7 @@ button {
     text-align: center;
 }
 button.big {
+    white-space: nowrap;
     padding: 10px 30px;
     border: 0;
     border-radius: 15px;
@@ -523,7 +524,18 @@ footer .copy{
     .ico-users-text {
         margin: 10px 0 5px 0;
     }
+    .company-logo,
+    .company-title {
+        width: 30%;
+        margin: 0;
+    }
+    .company-logo img{
+        max-width: 100%;
+    }
     .stars .ico-medium {
         width: 12px;
+    }
+    footer {
+        margin: 0 -15px;
     }
 }
