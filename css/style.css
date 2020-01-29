@@ -70,6 +70,9 @@ h3 {
     content: "";
     border: none;
 }
+.align-center {
+    text-align: center !important;
+}
 strong {font-weight: 900;}
 .uppercase{text-transform: uppercase;}
 .underline{text-decoration: underline;}
@@ -221,9 +224,17 @@ ul.check li::before{
     width: 167px;
     border-bottom: 3px solid var(--red);
 }
-.ul-phones {
+.red-line-small-top::before {
+    content: '';
+    display: block;
+    margin: 20px 0;
+    width: 167px;
+    border-top: 1px solid var(--red);
+}
+.ul-phones,
+.ul-emails {
     list-style: none;
-    margin-left: 0;
+    margin: 0 0 10px 0;
     padding-left: 0;
 }
 .ul-phones li::before {
@@ -232,6 +243,13 @@ ul.check li::before{
     width: 12px;
     margin-right: 8px;
     content:url(../images/icons/ico-phone.svg);
+}
+.ul-emails li::before {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+    content:url(../images/icons/ico-email.svg);
 }
 
 /* ----------------------------- MAIN */
@@ -305,11 +323,13 @@ main {
 .right-bar {
     width: 270px;
 }
-.right-bar div{
-    margin-bottom:20px;
+.right-bar div,
+.right-bar-big div {
     background-color: var(--white);
+    margin-bottom: 20px;
 }
-.right-bar div h3{
+.right-bar div h3,
+.right-bar-big div h3{
     text-align: center;
     font-weight: bold;
 }
@@ -462,6 +482,12 @@ button.bordered {
 .ico-star-grey {
     content: url(../images/icons/ico-star-grey.svg);
 }
+.ico-phone {
+    content: url(../images/icons/ico-phone.svg);
+}
+.ico-email {
+    content: url(../images/icons/ico-email.svg);
+}
 
 /* ----------------------------------- FOOTER */
 footer {
@@ -486,6 +512,10 @@ footer .copy{
     main {
         margin: 0 -15px;
         padding: 10px;
+    }
+    .right-bar,
+    .right-bar-big {
+        margin-left: 0 !important;
     }
     .logo-about {
         max-width: 150px;
