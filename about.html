@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="../images/icons/favicon.png">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>SAQTANDYRY</title>
 </head>
@@ -31,9 +34,35 @@
         <nav class="uk-navbar uk-hidden@m uk-margin-top">
          
             <div class="uk-navbar-left">
-                <a class="uk-icon uk-navbar-toggle-icon red" uk-navbar-toggle-icon="" href="#">
+                <a class="uk-icon red" uk-toggle href="#nav-mobile">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg>
                 </a>
+
+                <div id="nav-mobile" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <a class="uk-navbar-item uk-logo" href="#"><img src='images/logo-white.svg' class="logo"></a>
+                        
+                        <div class="search black">
+                            <i class="ico-small ico-absolute ico-search-white"></i>
+                            <input type="text">
+                            <button>Найти</button>
+                        </div>
+
+                        <ul class="nav-mobile">
+                            <li><a href="">Автострахование</a></li>
+                            <li><a href="">ОГПО</a></li>
+                            <li><a href="">КАСКО</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+
+                        <div class="align-center uk-margin-top">
+                            <button class="purple-bg nowrap uk-margin-small-bottom">Задать вопрос специалистам</button><br>
+                            <a href="" class="underline uppercase">ПОСМОТРЕТЬ ВСЕ ВОПРОСЫ</a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="uk-navbar-center">
@@ -242,53 +271,136 @@
                     <li><a>О КОМПАНИИ</a></li>
                 </ul>
 
-                <section class="inner-content uk-margin-bottom uk-padding">
-                    <div class="uk-grid uk-child-width-expand@s">
-                        <div class="uk-margin-bottom">
-                            <h3>Алматы</h3>
-                            <h4 class="uk-margin-remove-top"><b>Режим работы:</b></h4>
-                            <p>
-                                Пн-пт: <b>09.00 - 18:00</b><br>
-                                Обед: <b>13:00 - 14:00</b><br>
-                                Выходной: <b>суббота, воскресенье.</b>
-                            </p>
-                            <p>
-                               <i class="ico-small ico-pin"></i> ул. Сатпаева, 24, ЖК "Звезда Востока"
-                            </p>
-                            <p><button class="small bordered">Смотреть на карте</button></p>
-                        </div>
-                        <div>
-                            <ul class="ul-phones">
-                                <li>+7 (777) 798-74-72</li>
-                                <li>+7 (747) 722-25-64</li>
-                                <li>+7 (727) 295-22-33</li>
-                            </ul>
-                        </div>
-                    </div>
+                <ul class="uk-switcher">
+                    <li class="uk-active">
+<!-- OFFICES ---------------------------------------------------------------------->
+                        <section class="inner-content uk-margin-bottom uk-padding">
+                            <div class="uk-grid uk-child-width-expand@s">
+                                <div class="uk-margin-bottom">
+                                    <h3>Алматы</h3>
+                                    <h4 class="uk-margin-remove-top"><b>Режим работы:</b></h4>
+                                    <p>
+                                        Пн-пт: <b>09.00 - 18:00</b><br>
+                                        Обед: <b>13:00 - 14:00</b><br>
+                                        Выходной: <b>суббота, воскресенье.</b>
+                                    </p>
+                                    <p>
+                                       <i class="ico-small ico-pin"></i> ул. Сатпаева, 24, ЖК "Звезда Востока"
+                                    </p>
+                                    <p><button class="small bordered">Смотреть на карте</button></p>
+                                </div>
+                                <div>
+                                    <ul class="ul-phones">
+                                        <li>+7 (777) 798-74-72</li>
+                                        <li>+7 (747) 722-25-64</li>
+                                        <li>+7 (727) 295-22-33</li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="uk-grid uk-child-width-expand@s">
+                                <div class="uk-margin-bottom">
+                                    <h3>Алматы</h3>
+                                    <h4 class="uk-margin-remove-top"><b>Режим работы:</b></h4>
+                                    <p>
+                                        Пн-пт: <b>09.00 - 18:00</b><br>
+                                        Обед: <b>13:00 - 14:00</b><br>
+                                        Выходной: <b>суббота, воскресенье.</b>
+                                    </p>
+                                    <p>
+                                       <i class="ico-small ico-pin"></i> ул. Сатпаева, 24, ЖК "Звезда Востока"
+                                    </p>
+                                    <p><button class="small bordered">Смотреть на карте</button></p>
+                                </div>
+                                <div>
+                                    <ul class="ul-phones">
+                                        <li>+7 (777) 798-74-72</li>
+                                        <li>+7 (747) 722-25-64</li>
+                                        <li>+7 (727) 295-22-33</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
 
-                    <div class="uk-grid uk-child-width-expand@s">
-                        <div class="uk-margin-bottom">
-                            <h3>Алматы</h3>
-                            <h4 class="uk-margin-remove-top"><b>Режим работы:</b></h4>
-                            <p>
-                                Пн-пт: <b>09.00 - 18:00</b><br>
-                                Обед: <b>13:00 - 14:00</b><br>
-                                Выходной: <b>суббота, воскресенье.</b>
-                            </p>
-                            <p>
-                               <i class="ico-small ico-pin"></i> ул. Сатпаева, 24, ЖК "Звезда Востока"
-                            </p>
-                            <p><button class="small bordered">Смотреть на карте</button></p>
-                        </div>
-                        <div>
-                            <ul class="ul-phones">
-                                <li>+7 (777) 798-74-72</li>
-                                <li>+7 (747) 722-25-64</li>
-                                <li>+7 (727) 295-22-33</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+                    </li>
+                    <li class="">
+<!-- REVIEWS ---------------------------------------------------------------------->
+                        <section class="inner-content">
+
+                            <div class="uk-grid@s uk-padding-small uk-padding-remove-vertical uk-padding-remove-right">
+                                <div class="comment uk-grid@m uk-grid-small uk-grid-column-small uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                                    <div class="uk-width-1-6">
+                                        <div class="img-round" style="background: url('images/man.jpg') no-repeat center;background-size: auto 75px;"></div>
+                                    </div>
+                                    
+                                    <div class="uk-width-expand">
+                                        <strong>Дмитрий</strong>
+                                        <p>Акционерное общество СК FREEDOM ориентируется на высококлассный сервис, использование инновационных технологий и предоставление услуг в режиме 24/7.</p>
+                                    </div>
+                                    <div class="uk-width-1-4">
+                                        <div class="stars">
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment uk-grid@m uk-grid-small uk-grid-column-small uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                                    <div class="uk-width-1-6">
+                                        <div class="img-round" style="background: url('images/man.jpg') no-repeat center;background-size: auto 75px;"></div>
+                                    </div>
+                                    
+                                    <div class="uk-width-expand">
+                                        <strong>Дмитрий</strong>
+                                        <p>Акционерное общество СК FREEDOM ориентируется на высококлассный сервис, использование инновационных технологий и предоставление услуг в режиме 24/7.</p>
+                                    </div>
+                                    <div class="uk-width-1-4">
+                                        <div class="stars">
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comment uk-grid@m uk-grid-small uk-grid-column-small uk-padding-small uk-flex uk-flex-middle" uk-grid>
+                                    <div class="uk-width-1-6">
+                                        <div class="img-round" style="background: url('images/man.jpg') no-repeat center;background-size: auto 75px;"></div>
+                                    </div>
+                                    
+                                    <div class="uk-width-expand">
+                                        <strong>Дмитрий</strong>
+                                        <p>Акционерное общество СК FREEDOM ориентируется на высококлассный сервис, использование инновационных технологий и предоставление услуг в режиме 24/7.</p>
+                                    </div>
+                                    <div class="uk-width-1-4">
+                                        <div class="stars">
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star"></i>
+                                            <i class="ico-medium ico-star-grey"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                    </li>
+                    <li class="">
+<!-- ABOUT COMPANY ---------------------------------------------------------------->
+                        <section class="inner-content uk-margin-bottom uk-padding">
+                            <h3>От чего можно застраховаться:</h3>
+                            <p>Полис ОГПО – обязательное страхование ответственности автовладельца за причинение вреда жизни, здоровью и имуществу других участников дорожного движения. Если ДТП случится по вине застрахованного, мы компенсируем вред пострадавшим.</p>
+                        </section>
+                    </li>
+                </ul>
+
+                
 
             </section>
 
@@ -302,7 +414,7 @@
 
                 <div  class="offers-right">
                     <div class="search">
-                        <i class="icon icon-search"></i>
+                        <i class="ico-small ico-absolute ico-search"></i>
                         <input type="text">
                         <button>Найти</button>
                     </div>
@@ -332,7 +444,7 @@
                             медицинское страхование,
                             как выбрать страховую компанию?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                        <button class="small">подробней ></button>
+                        <button class="small bordered">подробней ></button>
                     </section>
 
                     <section>
@@ -340,7 +452,7 @@
                             медицинское страхование,
                             как выбрать страховую компанию?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                        <button class="small">подробней ></button>
+                        <button class="small bordered">подробней ></button>
                     </section>
 
                     <section>
@@ -348,7 +460,7 @@
                             медицинское страхование,
                             как выбрать страховую компанию?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
-                        <button class="small">подробней ></button>
+                        <button class="small bordered">подробней ></button>
                     </section>
                 </div>
             </section>

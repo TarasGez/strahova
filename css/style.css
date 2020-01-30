@@ -11,6 +11,7 @@
     --grey:#ccc;
     --greyBorder:#ddd;
     --greyDark:#8d8d8d;
+    --greySearch:#484848;
 
     --blue:#2478f9;
     --purple:#6941aa;
@@ -76,6 +77,7 @@ h3 {
 strong {font-weight: 900;}
 .uppercase{text-transform: uppercase;}
 .underline{text-decoration: underline;}
+.align-center{text-align: center;}
 .red,
 .uk-navbar-nav>li.uk-active>a {
     color: var(--red);
@@ -98,6 +100,10 @@ strong {font-weight: 900;}
     color: var(--white);
 }
 .purple-bg:hover{background-color: var(--red);} 
+
+.nowrap {
+    white-space: nowrap;
+}
 
 .city-pin {
     text-transform: uppercase;
@@ -286,7 +292,11 @@ main {
     border: 1px solid var(--greyBorder);
     border-top:none;
 }
-.offer {
+.comment p {
+    margin: 3px;
+}
+.offer,
+.comment {
     border-bottom: 1px solid var(--greyBorder);
 }
 .offer:last-child {
@@ -322,7 +332,7 @@ main {
 
 /* ------------------------------------ RIGHTBAR */
 .right-bar {
-    width: 270px;
+    min-width: 270px;
 }
 .right-bar div,
 .right-bar-big div {
@@ -363,20 +373,21 @@ main {
     margin: 20px 30px;
 }
 
-.right-bar .search {
+/* -------------------------------------------  SEARCH */
+div.search {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    margin: 0 -10px;
+    margin: 0;
     border-radius: 10px;
     border: 1px solid var(--red);
 }
-.right-bar .search input{
-    width: 145px;
+div.search input{
+    width: 100%;
     padding-left: 25px;
     color: var(--greyDark);
 }
-.right-bar .search input:focus{
+div.search input:focus{
     border-radius: 10px;
     border-color: dodgerblue;
     border-top-right-radius: 0;
@@ -384,25 +395,48 @@ main {
     outline: none;
     box-shadow: 0 0 8px 0 dodgerblue;
 }
-.right-bar .search .icon-search::before {
+div.search .ico-absolute {
     position: absolute;
-    margin-top: 8px;
+    width: 12px;
+    height: 12px;
+    margin-top: 10px;
     margin-left: 8px;
-    content:url('../images/icons/search.png');
 }
-.right-bar .search input,
-.right-bar .search button{
+.ico-search {
+    content:url('../images/icons/ico-search.svg');
+}
+.ico-search-white {
+    content:url('../images/icons/ico-search-white.svg');
+}
+div.search input{
     border: 0;
-    border-radius: 9px;
+    border-radius: 10px;
 }
-.right-bar .search button{
+div.search button{
+    border: 0;
+    border-radius: 7px;
+}
+div.search.black{
+    background: var(--greySearch);
+}
+div.search.black input {
+    background: inherit;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+div.search.black button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+div.search button{
     color: var(--white);
     background-color: var(--red);
     font-size: 11px;
 }
-.right-bar .search button:hover{
+div.search button:hover{
     background-color: var(--purple);
 }
+/* -------------------------------------------  /SEARCH */
 
 .right-bar .offers-right {
     padding: 20px;
@@ -490,6 +524,33 @@ button.bordered {
     content: url(../images/icons/ico-email.svg);
 }
 
+/* ------------------------ DROP NAV MENU MOBILE */
+.nav-mobile {
+    list-style: none;
+    margin: 10px -20px;
+    padding: 0;
+    border-bottom: 2px solid var(--red);
+}
+.nav-mobile li{
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--greyDark);
+}
+.nav-mobile li:last-child{
+    border-bottom: none;
+}
+.nav-mobile li a{
+    font-size: 24px;
+}
+
+.img-round {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+}
+
+
 /* ----------------------------------- FOOTER */
 footer {
     background-color: var(--backH);
@@ -513,6 +574,9 @@ footer .copy{
     main {
         margin: 0 -15px;
         padding: 10px;
+    }
+    .breadcrumb {
+        margin-left: 0;
     }
     .right-bar,
     .right-bar-big {
