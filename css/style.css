@@ -602,4 +602,7 @@ footer .copy{
     footer {
         margin: 0 -15px;
     }
+    .comment .uk-first-column {
+        padding-left:0;
+    }
 }
